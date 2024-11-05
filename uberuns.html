@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Über Uns</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="mainMenu" class="hidden">
+        <a href="index.html">Home</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="uberuns.html">Über Uns</a>
+        <a href="dienstleistungen.html">Dienstleistungen</a>
+        <a href="anmeldung.html">Anmeldung</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Über Uns</h1>
+      <p>Erfahre mehr über das Team hinter diesem Minecraft-Server-Projekt.</p>
+    </main>
+    <footer>
+      <!-- Footer Content -->
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mainMenu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
