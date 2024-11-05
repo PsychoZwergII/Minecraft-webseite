@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +8,30 @@
   </head>
   <body>
     <header>
+      <!-- Hamburger Icon -->
       <button class="hamburger" onclick="toggleMenu()">☰</button>
-      <nav id="mainMenu" class="hidden">
+
+      <!-- Hauptmenü, das mit JavaScript ein- und ausgeblendet wird -->
+      <nav id="mainMenu" class="menu hidden">
         <a href="index.html">Home</a>
         <a href="projekte.html">Projekte</a>
-        <a href="uberuns.html">Über Uns</a>
+        <div class="submenu">
+          <a href="fertige_projekte.html">Fertige Projekte</a>
+          <a href="laufende_projekte.html">Laufende Projekte</a>
+        </div>
+        <a href="ueber_uns.html">Über Uns</a>
         <a href="dienstleistungen.html">Dienstleistungen</a>
-        <a href="anmeldung.html">Anmeldung</a>
+        <a href="anmeldung.html">Anmelden</a>
       </nav>
     </header>
+
     <main>
-      <h1>Willkommen zu unserer Minecraft-Welt!</h1>
-      <p>Entdecke unser Angebot und tauche in die Welt der Klötzchen ein.</p>
+      <h1>Willkommen auf unserer Webseite</h1>
+      <p>
+        Erkunden Sie unsere aktuellen und abgeschlossenen Projekte, erfahren Sie
+        mehr über uns, und melden Sie sich für Dienstleistungen an.
+      </p>
     </main>
-    <footer>
-      <!-- Footer Content -->
-    </footer>
 
     <script>
       function toggleMenu() {
