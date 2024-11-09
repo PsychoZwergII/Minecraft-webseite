@@ -5,23 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dienstleistungen</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <header>
-      <!-- Hamburger Icon -->
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
-
-      <!-- Hauptmenü, das mit JavaScript ein- und ausgeblendet wird -->
-      <nav id="mainMenu" class="menu hidden">
-        <a href="index.html">Home</a>
-        <a href="projekte.html">Projekte</a>
-        <a href="ueber_uns.html">Über Uns</a>
-        <a href="dienstleistungen.html">Dienstleistungen</a>
-        <a href="anmeldung.html">Anmelden</a>
-      </nav>
-    </header>
+    <button class="hamburger" onclick="openSidebar()">☰</button>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" onclick="closeSidebar()">Schließen ×</a>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="projekte.html"><i class="fas fa-project-diagram"></i> Projekte</a>
+      <a href="ueber_uns.html"><i class="fas fa-users"></i> Über Uns</a>
+      <a href="dienstleistungen.html"><i class="fas fa-concierge-bell"></i> Dienstleistungen</a>
+      <a href="anmeldung.html"><i class="fas fa-user-plus"></i> Anmelden</a>
+    </div>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
     <h1>Dienstleistungen</h1>
+  
+    <script>
+      let isShown = false;
+  
+      function openSidebar() {
+        if (isShown) {
+          closeSidebar();
+          return;
+        }
+        document.getElementById("mySidebar").style.width = "250px";
+        isShown = true;
+      }
+  
+      function closeSidebar() {
+        document.getElementById("mySidebar").style.width = "0";
+        isShown = false;
+      }
+    </script>
   </body>
 
   <footer>

@@ -14,76 +14,58 @@ body {
   text-align: center;
 }
 
-/* Header und Menü */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #1f1f1f;
+  color: white;
   padding: 10px;
+  position: relative;
 }
+
+#mySidebar {
+  height: 100%;
+  width: 0; /* Standardmäßig geschlossen */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#mySidebar a {
+  display: flex; /* Flexbox aktivieren */
+  align-items: center; /* Vertikale Ausrichtung */
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  transition: 0.3s;
+}
+
+#mySidebar a i {
+  /* Falls du Icons verwendest */
+  margin-right: 10px; /* Abstand zwischen Icon und Text */
+  font-size: 25px; /* Größe des Icons */
+}
+
+#mySidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Stil für den Hamburger-Button */
 
 .hamburger {
-  font-size: 1.8em;
-  background: none;
-  border: none;
-  color: #e0e0e0; /* Helles Grau */
-  cursor: pointer;
-}
-
-/* Hidden class to initially hide the menu */
-.hidden {
-  display: none;
-}
-
-nav.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #2c2c2c; /* Sehr dunkles Grau */
-  padding: 10px;
-  border-radius: 5px;
-  transition: max-height 0.3s ease-out;
-}
-
-nav.menu a {
-  color: #e0e0e0;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 10px 15px;
-  margin: 5px 0;
-  width: 100%;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #333; /* Dunkles Grau */
-  transition: background-color 0.3s;
-}
-
-/* Farben für Links */
-nav.menu a:hover {
-  background-color: #4e8e8e; /* Smaragdgrün */
-  color: #e0e0e0;
-}
-
-.hidden {
-  display: none;
-}
-
-.submenu {
-  display: none;
-}
-
-/* Dropdown-Untermenü für Projekte */
-nav.menu a[href="projekte.html"]:hover + .submenu,
-nav.menu .submenu:hover {
-  display: block;
-}
-
-.submenu a {
-  background-color: #2c2c2c; /* Dunkler als das Hauptmenü */
-}
-
-.submenu a:hover {
-  background-color: #8b0000; /* Weinrot */
+  position: absolute;
+  top: 20px;
+  left: 10px; /* Hamburger-Button auf der linken Seite positionieren */
+  font-size: 30px; /* Größe des Icons */
+  background: none; /* Hintergrund entfernen */
+  border: none; /* Rahmen entfernen */
+  color: white; /* Schriftfarbe */
+  cursor: pointer; /* Zeiger-Cursor beim Hover */
+  padding: 10px; /* Padding hinzufügen */
 }
 
 h1 {
@@ -154,6 +136,44 @@ footer {
 
 #home {
   border-radius: 30px;
-  margin-left: 1027px;
-  margin-top: -250px;
+  margin-right: 10px;
+  margin-top: 100px;
+}
+
+/* Formular-Stile */
+#contactForm {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
