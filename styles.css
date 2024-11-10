@@ -114,7 +114,7 @@ p {
 @media (max-width: 480px) {
   img {
     height: 200px;
-    width: auto;
+    max-width: 300px;
   }
 
   #Video {
