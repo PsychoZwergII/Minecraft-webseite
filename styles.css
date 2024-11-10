@@ -83,6 +83,12 @@ p {
   padding: 0 20px;
 }
 
+@media (min-width: 1024px) {
+  img {
+    height: 500px;
+    width: 300px;
+  }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   nav.menu {
@@ -93,6 +99,26 @@ p {
   .hidden {
     display: flex;
   }
+
+  img {
+    height: 300px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    height: 200px;
+    width: auto;
+  }
+}
+
+#Logo {
+  position: absolute; /* Positionieren */
+  top: 10px; /* Abstand vom oberen Rand */
+  right: 10px; /* Abstand vom rechten Rand */
+  width: 150px; /* Breite des Logos anpassen, falls nötig */
+  height: auto; /* Höhe automatisch anpassen */
 }
 
 /* Footer (Falls benötigt) */
