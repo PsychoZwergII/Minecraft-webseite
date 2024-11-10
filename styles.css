@@ -141,7 +141,7 @@ p {
 
 #Logo {
   position: absolute; /* Positionieren */
-  top: 10px; /* Abstand vom oberen Rand */
+  top: -3px; /* Abstand vom oberen Rand */
   right: 10px; /* Abstand vom rechten Rand */
   width: 150px; /* Breite des Logos anpassen, falls nötig */
   height: auto; /* Höhe automatisch anpassen */
