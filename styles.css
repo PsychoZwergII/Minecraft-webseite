@@ -127,6 +127,10 @@ p {
     width: auto;
   }
 }
+#Video {
+  width: 100%; /* Setzt die Breite auf 100% des übergeordneten Elements */
+  height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis zu wahren */
+}
 
 #Logo {
   position: absolute; /* Positionieren */
