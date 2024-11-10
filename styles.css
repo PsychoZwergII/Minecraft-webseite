@@ -88,6 +88,11 @@ p {
     height: 400px;
     width: auto;
   }
+
+  #Video {
+    height: 400px;
+    width: auto;
+  }
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -104,10 +109,20 @@ p {
     height: 300px;
     width: auto;
   }
+
+  #Video {
+    height: 300px;
+    width: auto;
+  }
 }
 
 @media (max-width: 480px) {
   img {
+    height: 200px;
+    width: auto;
+  }
+
+  #Video {
     height: 200px;
     width: auto;
   }
